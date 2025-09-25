@@ -4,12 +4,6 @@
 #include <unistd.h>
 #include <sys/wait.h>
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
-#include <sys/wait.h>
-
 #define T_MAX 1024
 #define T_MAX_ARG 100
 
