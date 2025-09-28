@@ -1,25 +1,24 @@
-# Shell en C
-
-Este proyecto implementa una shell en C con soporte para:
-
-- Ejecución de comandos normales
-- Comandos encadenados con pipes
-- Redirección de salida
-
-Para compilar:
-    
-    gcc prueba3.c -o shell
-
-Funciona en Linux con las librerías estándar.
-
+Este proyecto implementa una shell en C.
 
 ## Funciones
-* Comandos básicos. Puede ejecutar cualquier comando del sistema Linux.
+* Comandos básicos. Puede ejecutar comandos del sistema Linux.
 * Permite encadenar comandos usando pipes, por ejemplo:\
 $ ls -l | grep .c | wc -l
 
 * Redirige la salida estándar a un archivo.
 * Salir de la shell mediante comando exit
+
+Para compilar:
+    
+    gcc prueba3.c -o shell
+
+Funciona en Linux con las librerías estándar. Para usar comandos, se deben introducir cuando la consola muestre:
+    
+    shell: $
+
+y luego presionar Enter. Para salir, hay que usar el comando exit
+
+
 
 ## Comando miprof
 
@@ -35,7 +34,7 @@ Ejemplo de salida:
 
 Al usar: 
     
-    $ miprof ejec ls -l
+    shell: $ miprof ejec ls -l
 La salida es:
 
     total 64
